@@ -154,7 +154,7 @@ function init() {
             opacity: 0,
             duration: 1,
             onComplete: function() {
-                window.location.href  = 'https://coralgardeners.org/adopt-super-corals'
+                window.location.href  = 'https://coralgardeners.org/#adopt'
             }
         })
     })

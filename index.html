@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animationbanner_Coral_Gardeners</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
+</head>
+<body>
+    <!-- Bannercontainer -->
+    <div id="container" class="container">
+      <!-- Logo -->
+      <img class="logo" src="src/img/cg_logo.png" alt="Image of a Coral with Text(Coral Gardeners)">
+
+      <!-- Textstuff -->
+      <div class="text-one">
+        Coral reefs around the world are facing the 3rd coral bleaching
+        event within the next 5 years.
+      </div>
+      <div class="text-two">
+        We repopulate the reef with resilient corals that have proven to
+        survive bleaching events.
+      </div>
+      <div class="text-three">
+        ADOPT A CORAL AND SAVE THE REEF!
+      </div>
+
+      <!-- Corals -->
+      <img src="src/img/Coral1.png" alt="" class="coral coral-1">
+      <img src="src/img/Coral2.png" alt="" class="coral coral-2">
+      <img src="src/img/Coral3.png" alt="" class="coral coral-3">
+      <img src="src/img/Coral4.png" alt="" class="coral coral-4">
+      <img src="src/img/Coral5.png" alt="" class="coral coral-5">
+      <img src="src/img/Coral6.png" alt="" class="coral coral-6">
+      <img src="src/img/Coral7.png" alt="" class="coral coral-7">
+      <img src="src/img/Coral8.png" alt="" class="coral coral-8">
+      <img src="src/img/Coral9.png" alt="" class="coral coral-9">
+      <img src="src/img/Coral10.png" alt="" class="coral coral-10">
+      <img src="src/img/Coral11.png" alt="" class="coral coral-11">
+      <img src="src/img/Coral12.png" alt="" class="coral coral-12">
+      <img src="src/img/Coral13.png" alt="" class="coral coral-13">
+      <img src="src/img/Coral14.png" alt="" class="coral coral-14">
+      <img src="src/img/Coral15.png" alt="" class="coral coral-15">
+
+      <!-- Supercoral-Slideshow -->
+      <div class="content">
+        <div class="slide-wrapper">
+          <div class="slide-item">
+            <h3 class="slide-item__title"></h3>
+            <img src="src/img/slider1.png" class="slide-item__image">
+          </div>
+          <div class="slide-item">
+            <h3 class="slide-item__title"></h3>
+            <img src="src/img/slider2.png" class="slide-item__image">
+          </div>
+          <div class="slide-item">
+            <h3 class="slide-item__title"></h3>
+            <img src="src/img/slider3.png" class="slide-item__image">
+          </div>
+        </div>
+        <a href="#" class="scene-nav scene-nav--prev" data-nav="previous"><i class="fas fa-angle-left"></i></a>
+        <a href="#" class="scene-nav scene-nav--next" data-nav="next"><i class="fas fa-angle-right"></i></a>
+      </div>
+
+      <!-- CTA-Button -->
+      <div class="btn-container animate__animated animate__bounce">
+        <a class="cta" target="blank">Adopt me!</a>
+      </div>
+    </div>
+
+    <!-- Scriptstuff -->
+    <script src="src/script/pixi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="src/script/script.js"></script>
+    <script src="src/script/filter.js"></script>
+    <!-- To check if Pixi is working -->
+    <script type="text/javascript">
+      let type = "WebGL"
+      if(!PIXI.utils.isWebGLSupported()){
+        type = "canvas"
+      }
+
+      PIXI.utils.sayHello(type)
+    </script>
+</body>
+</html>
